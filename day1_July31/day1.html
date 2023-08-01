@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratima Roy</title>
+</head>
+<body>
+    <h1>Images in HTML</h1>
+    <p>Add images into a webpage</p>
+    <img src="images/pexels-aarti-vijay-2900315.jpg" alt="photo of Ganesh idol" title="Pray to Ganesh for Good Luck!" width="50%">
+    <figure>
+        <img src="images/pexels-aarti-vijay-2900315.jpg" alt="photo of Ganesh idol" title="Pray to Ganesh for Good Luck!" width="100%">
+        <img src="images/pexels-david-bartus-2873473.jpg" alt="photo of Ganesh idol" title="Pray to Ganesh for Good Luck!" width="49%">
+        <img src="images/pexels-dino-uniyal-5949177.jpg" alt="photo of Ganesh idol" title="Pray to Ganesh for Good Luck!" width="49%">
+        <figcaption>Pictures of Hinduism Idol Ganesh</figcaption>
+    </figure>
+
+    <h1 id="picTag">picture tag</h1>
+    <p>Resize the browser window to load different photos of Ganesh</p>
+    <picture>
+        <source media="(min-width:1100px)" srcset="images/pexels-aarti-vijay-2900315.jpg">
+        <source media="(min-width:1100px)" srcset="images/pexels-david-bartus-2873473.jpg">
+        <source media="(min-width:1100px)" srcset="images/pexels-aarti-vijay-2900315.jpg">
+        <img src="images/pexels-aarti-vijay-2900315.jpg" alt="photo of Ganesh idol" width="60%">
+    </picture>
+
+    <!--LINKS-->
+    <h1 id="links">Link to other sites</h1>
+    <a href="http://www.qcc.cuny.edu" target="_blank" rel="noopener noreferrer">Visit QCC Website</a>
+   <p> <a href="mailto:hwu@qcc.cuny.edu">Email to prof. Wu</a></p>
+   <p>Follow Us!:</p>
+   <figure>
+    <a href="https://www.tiktok.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+        <img src="images/7564186_tiktok_logo_brand_icon.svg" alt="Image of Tiktok log: follow us in Tiktok" width="20%">
+        </a>
+        <a href="https://www.twitter.com/@qcc_cuny" target="_blank" rel="noopener noreferrer">
+            <img src="images/294709_circle_twitter_icon.svg" alt="Image of Tiktok log: follow us in Twitter" width="20%">
+            </a>
+   </figure>
+   <h1>Link to a specific part of the same web page</h1>
+   <ul>
+    <li>
+        <a href="#">Top of the page</a>
+    </li>
+    <li>
+        <a href="#links">Links</a>
+        
+    </li>
+
+   </ul>
+   <h1>map tag</h1>
+   <figure>
+    <img src="images/pexels-vladimir-maliutin-3915769.jpg" width="500px" usemap="#nyc">
+   </figure>
+   <map name="nyc">
+    <area shape="rect" coords="300px,20px,350px,170px" href="https://en.wikipedia.org/wiki/New_York_City" target="_blank" rel="noopener noreferrer">
+    <area shape="circle" coords="100px,210px,30px" href="https://en.wikipedia.org/wiki/New_York_City" target="_blank" rel="noopener noreferrer">
+   </map>
+   <hr>
+   <footer> Day 1: HTML review @ Pratima Roy</footer>
+</body>
+</html>
